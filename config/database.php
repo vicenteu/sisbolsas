@@ -1,9 +1,8 @@
 <?php
 
-use Illuminate\Support\Str;
+/*use Illuminate\Support\Str;
 
-$ DATABASE_URL = parse_url ('postgres: // iicnvwjetuapbs : be9f8ca9d24b6f3c3ce60a3025f65363cde1a5639d88e609844bc15370056275 @ ec2-54-161-189-150.compute-1.amazonaws.com : 5432 / dfit6mq0e8v44d
-');
+$ DATABASE_URL = parse_url ('postgres://iicnvwjetuapbs:be9f8ca9d24b6f3c3ce60a3025f65363cde1a5639d88e609844bc15370056275@ec2-54-161-189-150.compute-1.amazonaws.com:5432/dfit6mq0e8v44d');*/
 
 return [
 
