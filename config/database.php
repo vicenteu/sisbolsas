@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Str;
+
 $ DATABASE_URL = parse_url ('postgres: // iicnvwjetuapbs : be9f8ca9d24b6f3c3ce60a3025f65363cde1a5639d88e609844bc15370056275 @ ec2-54-161-189-150.compute-1.amazonaws.com : 5432 / dfit6mq0e8v44d
 ');
 
@@ -61,6 +63,7 @@ return [
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
         ],
+        /*
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => $DATABASE_URL["host"],
@@ -73,22 +76,22 @@ return [
             'prefix_indexes' => true,
             'schema' => 'public',
             'sslmode' => 'prefer',
-        ],
+        ],*/
 
 
-        /*'pgsql' => [
+        'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
+            'database' => env('DB_DATABASE', 'LAB-SisBolsas'),
+            'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
             'schema' => 'public',
             'sslmode' => 'prefer',
-        ],*/
+        ],
 
         'sqlsrv' => [
             'driver' => 'sqlsrv',
